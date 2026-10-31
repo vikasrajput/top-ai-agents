@@ -1,0 +1,2302 @@
+{
+  "schema_version": 1,
+  "published_at": "2026-10-31T14:07:48.119191Z",
+  "period": {
+    "start": "2026-09-01T00:00:00Z",
+    "end": "2026-10-01T00:00:00Z",
+    "label": "September 2026"
+  },
+  "categories": [
+    {
+      "id": "coding",
+      "name": "Coding",
+      "description": "Agents that assist software development."
+    },
+    {
+      "id": "research",
+      "name": "Research",
+      "description": "Search, investigate and synthesize evidence."
+    },
+    {
+      "id": "browser-automation",
+      "name": "Browser automation",
+      "description": "Agents and infrastructure for browser and web interaction."
+    },
+    {
+      "id": "knowledge-memory",
+      "name": "Knowledge and memory",
+      "description": "Retrieval, knowledge and persistent agent memory."
+    },
+    {
+      "id": "workflow-business",
+      "name": "Workflow and business automation",
+      "description": "Compose and operate business workflows."
+    },
+    {
+      "id": "frameworks",
+      "name": "Frameworks",
+      "description": "Libraries for building and coordinating agents."
+    },
+    {
+      "id": "personal-workspaces",
+      "name": "Personal agents and workspaces",
+      "description": "Personal assistants and conversational workspaces."
+    },
+    {
+      "id": "skills",
+      "name": "Skills",
+      "description": "Reusable instructions and skill packages."
+    },
+    {
+      "id": "domain-specific",
+      "name": "Domain-specific",
+      "description": "Specialized research, education and industry agents."
+    },
+    {
+      "id": "agent-operations",
+      "name": "Agent operations",
+      "description": "Operate, connect and manage agents."
+    }
+  ],
+  "projects": [
+    {
+      "name": "n8n",
+      "category_id": "workflow-business",
+      "kind": "platform",
+      "intro": "A fair-code automation platform combining a visual canvas, custom code, and agent nodes. It can run self-hosted or as a managed cloud service.",
+      "utilities": [
+        "Compose AI steps with ordinary business-system integrations.",
+        "Add logic, approvals, and custom code around agent actions."
+      ],
+      "audience": [
+        "Teams building integration-heavy workflows with operational ownership."
+      ],
+      "example": "Illustrative, not tested: classify incoming requests and draft a response for approval rather than sending it automatically.",
+      "requirements": [
+        "Use the documented Docker deployment or a supported hosted account.",
+        "Configure persistent storage and narrowly scoped integration credentials."
+      ],
+      "limitations": [
+        "The Sustainable Use License is not a standard permissive open-source license.",
+        "Workflow credentials and automatic actions need careful access and retry design."
+      ],
+      "cost_notes": [
+        "Cloud plans, enterprise features, model calls, and connected APIs may be billed separately.",
+        "Execution history can retain sensitive payloads; check retention and external-service routing."
+      ],
+      "license": "Sustainable Use License for applicable code, with n8n Enterprise License for excluded enterprise files; review LICENSE.md and LICENSE_EE.md.",
+      "id": "193215554",
+      "slug": "n8n-193215554",
+      "full_name": "n8n-io/n8n",
+      "github_url": "https://github.com/n8n-io/n8n",
+      "stars": 209191,
+      "stars_added_period": 3842,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/n8n-io/n8n/blob/master/README.md",
+        "https://github.com/n8n-io/n8n/blob/master/LICENSE.md",
+        "https://github.com/n8n-io/n8n/blob/master/LICENSE_EE.md"
+      ]
+    },
+    {
+      "name": "Agno",
+      "category_id": "frameworks",
+      "kind": "framework",
+      "intro": "An agent platform and SDK ecosystem for building agents, teams, and workflows. Its AgentOS layer exposes agents as services with operational controls.",
+      "utilities": [
+        "Build agent teams and workflows around supported SDKs.",
+        "Expose agents through API/MCP services with persistent state."
+      ],
+      "audience": [
+        "Developers operating agent services in their own infrastructure."
+      ],
+      "example": "Illustrative, not tested: deploy a read-only agent service and inspect its traces before adding write-capable tools.",
+      "requirements": [
+        "Use the documented Python SDK and a deployment template appropriate to your cloud.",
+        "Configure PostgreSQL, model credentials, and service authentication."
+      ],
+      "limitations": [
+        "Service controls require configuration; deployment templates do not guarantee isolation.",
+        "Agent decisions and connected tools still need application-specific evaluation."
+      ],
+      "cost_notes": [
+        "Cloud resources, models, and optional services have independent costs.",
+        "The README documents provider telemetry and AGNO_TELEMETRY=false; also review conversation and trace storage."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "488641606",
+      "slug": "agno-488641606",
+      "full_name": "agno-agi/agno",
+      "github_url": "https://github.com/agno-agi/agno",
+      "stars": 42997,
+      "stars_added_period": 508,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/agno-agi/agno/blob/main/README.md",
+        "https://github.com/agno-agi/agno/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Windmill",
+      "category_id": "workflow-business",
+      "kind": "platform",
+      "intro": "A code-first platform that turns scripts into workflows, APIs, scheduled jobs, and applications. It can orchestrate agent tasks while keeping ordinary code and review workflows in the loop.",
+      "utilities": [
+        "Compose scripts and agent steps into operational workflows.",
+        "Expose reviewed scripts as interfaces, APIs, or scheduled jobs."
+      ],
+      "audience": [
+        "Engineering-led teams automating internal processes and applications."
+      ],
+      "example": "Illustrative, not tested: schedule a read-only report script and route its agent-generated summary to a reviewer.",
+      "requirements": [
+        "Deploy the documented Docker Compose, Kubernetes, or hosted setup.",
+        "Configure worker resources, database access, and required service credentials."
+      ],
+      "limitations": [
+        "Community binaries and source builds have different licensing boundaries.",
+        "Scripts and workers can access production systems; isolate execution and review permissions."
+      ],
+      "cost_notes": [
+        "Hosting, worker compute, models, and commercial features are separate cost considerations.",
+        "Workflow inputs, secrets, logs, and external tool calls need an explicit data-handling policy."
+      ],
+      "license": "Mixed scope: AGPLv3 for most source, Apache-2.0 for specified clients/specs, and proprietary enterprise code/Community Edition conditions; review LICENSE and README deployment terms.",
+      "id": "488804911",
+      "slug": "windmill-488804911",
+      "full_name": "windmill-labs/windmill",
+      "github_url": "https://github.com/windmill-labs/windmill",
+      "stars": 18334,
+      "stars_added_period": 348,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/windmill-labs/windmill/blob/main/README.md",
+        "https://github.com/windmill-labs/windmill/blob/main/LICENSE",
+        "https://github.com/windmill-labs/windmill/blob/main/LICENSE-AGPL",
+        "https://github.com/windmill-labs/windmill/blob/main/LICENSE-APACHE"
+      ]
+    },
+    {
+      "name": "CowAgent",
+      "category_id": "personal-workspaces",
+      "kind": "agent",
+      "intro": "A personal assistant harness combining planning, skills, memory, knowledge, and multi-agent features. It can run on a computer or server and connect to messaging channels.",
+      "utilities": [
+        "Plan and execute tool-based tasks through a personal assistant.",
+        "Maintain a knowledge base and persistent memory across interactions."
+      ],
+      "audience": [
+        "Technical users experimenting with a continuously available personal assistant."
+      ],
+      "example": "Illustrative, not tested: ask CowAgent to draft a weekly note from approved files and inspect the proposed retained memory.",
+      "requirements": [
+        "Follow the supported local, Docker, or server installation instructions.",
+        "Configure a model provider and the chosen web or messaging channel."
+      ],
+      "limitations": [
+        "Automatic evolution of skills and memory can introduce drift.",
+        "Computer and external-service control need narrow permissions and supervised testing."
+      ],
+      "cost_notes": [
+        "Models, hosting, and external services can incur independent costs.",
+        "Long-term memory and channel access can expose personal data; inspect retention and provider routing."
+      ],
+      "license": "MIT; reviewed the repository LICENSE. The README frames use as technical research/learning and assigns compliance responsibility to users.",
+      "id": "522158088",
+      "slug": "cowagent-522158088",
+      "full_name": "zhayujie/CowAgent",
+      "github_url": "https://github.com/zhayujie/CowAgent",
+      "stars": 47713,
+      "stars_added_period": 540,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/zhayujie/CowAgent/blob/master/README.md",
+        "https://github.com/zhayujie/CowAgent/blob/master/LICENSE"
+      ]
+    },
+    {
+      "name": "LangChain",
+      "category_id": "frameworks",
+      "kind": "framework",
+      "intro": "A framework for building agents and model-powered applications from interoperable components. It is a development library, not a ready-to-use autonomous assistant.",
+      "utilities": [
+        "Connect models, tools, and retrieval components in application code.",
+        "Build an agent with explicit provider and integration choices."
+      ],
+      "audience": [
+        "Developers implementing their own agent applications."
+      ],
+      "example": "Illustrative, not tested: build a small agent with a read-only catalog tool and validate its structured responses.",
+      "requirements": [
+        "Install the Python package and provider-specific integrations you need.",
+        "Supply model credentials or a compatible local endpoint."
+      ],
+      "limitations": [
+        "Application behavior depends on the chosen tools, prompts, and model.",
+        "Advanced stateful orchestration is a separate design task; the README points to LangGraph."
+      ],
+      "cost_notes": [
+        "The MIT framework does not include model usage or managed observability/deployment.",
+        "Tool inputs and traces can contain sensitive data; review all configured providers."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "552661142",
+      "slug": "langchain-552661142",
+      "full_name": "langchain-ai/langchain",
+      "github_url": "https://github.com/langchain-ai/langchain",
+      "stars": 148763,
+      "stars_added_period": 2004,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/langchain-ai/langchain/blob/master/README.md",
+        "https://github.com/langchain-ai/langchain/blob/master/LICENSE"
+      ]
+    },
+    {
+      "name": "Activepieces",
+      "category_id": "workflow-business",
+      "kind": "platform",
+      "intro": "An automation platform with a visual builder and extensible TypeScript integrations called pieces. Its integrations can also be exposed as MCP tools for agents.",
+      "utilities": [
+        "Connect business services in reviewed automation flows.",
+        "Reuse pieces as tools in an agent or MCP client."
+      ],
+      "audience": [
+        "Operations teams with developers available to configure integrations and permissions."
+      ],
+      "example": "Illustrative, not tested: draft a support-ticket summary and require approval before updating the connected service.",
+      "requirements": [
+        "Deploy the documented application or use its hosted service.",
+        "Configure scoped credentials for each connected system and model."
+      ],
+      "limitations": [
+        "Enterprise features are licensed separately from the community code.",
+        "Connected pieces can change external records; add approvals and test with non-production data."
+      ],
+      "cost_notes": [
+        "Hosted plans, enterprise features, and provider/integration usage can have separate charges.",
+        "Self-hosting still sends data to any external apps and models selected in a flow."
+      ],
+      "license": "MIT for community code outside the specified enterprise directories; enterprise features use a commercial license.",
+      "id": "573661753",
+      "slug": "activepieces-573661753",
+      "full_name": "activepieces/activepieces",
+      "github_url": "https://github.com/activepieces/activepieces",
+      "stars": 25308,
+      "stars_added_period": 691,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/activepieces/activepieces/blob/main/README.md",
+        "https://github.com/activepieces/activepieces/blob/main/LICENSE",
+        "https://github.com/activepieces/activepieces/blob/main/packages/ee/LICENSE"
+      ]
+    },
+    {
+      "name": "Langflow",
+      "category_id": "workflow-business",
+      "kind": "platform",
+      "intro": "A visual builder for agents and workflows with API and MCP deployment surfaces. Components can be customized in Python while flows remain inspectable in a graphical interface.",
+      "utilities": [
+        "Compose and inspect model, retrieval, and agent flows visually.",
+        "Expose a workflow through an API or MCP server."
+      ],
+      "audience": [
+        "Developers prototyping agent applications with a visual authoring layer."
+      ],
+      "example": "Illustrative, not tested: connect a document retriever to a model, inspect intermediate results, and expose the reviewed flow as a tool.",
+      "requirements": [
+        "Use the desktop app, Docker, or a Python 3.10-3.14 installation.",
+        "Configure model and database credentials and secure exposed endpoints."
+      ],
+      "limitations": [
+        "Custom Python components and exposed tools execute with deployment permissions.",
+        "A working visual flow is not evidence of production safety or answer quality."
+      ],
+      "cost_notes": [
+        "Model calls, databases, and deployment infrastructure may incur charges.",
+        "Flow traces can contain prompts and document content; review observability and storage settings."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "599320067",
+      "slug": "langflow-599320067",
+      "full_name": "langflow-ai/langflow",
+      "github_url": "https://github.com/langflow-ai/langflow",
+      "stars": 156188,
+      "stars_added_period": 1490,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/langflow-ai/langflow/blob/main/README.md",
+        "https://github.com/langflow-ai/langflow/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "LibreChat",
+      "category_id": "personal-workspaces",
+      "kind": "platform",
+      "intro": "A self-hosted chat and agent workspace supporting multiple model providers, tools, and skills. Its current release also documents managed agent APIs and experimental attached code workspaces.",
+      "utilities": [
+        "Unify multiple model-backed conversations and agents in one interface.",
+        "Manage agent tools, files, and skills with deployment access controls."
+      ],
+      "audience": [
+        "Teams that can operate a multi-user conversational platform."
+      ],
+      "example": "Illustrative, not tested: configure a read-only agent for a non-sensitive knowledge base and compare cited answers with the documents.",
+      "requirements": [
+        "Deploy the documented service stack and persistent stores.",
+        "Configure provider access, authentication, and permissions for agent tools."
+      ],
+      "limitations": [
+        "Attached code workspaces are described as highly experimental.",
+        "Provider support and role grants do not establish security for every connected tool."
+      ],
+      "cost_notes": [
+        "Models, code workers, databases, and hosting can each contribute costs.",
+        "Conversations, attachments, traces, and worker files need explicit retention and access policies."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "600596928",
+      "slug": "librechat-600596928",
+      "full_name": "LibreChat-AI/LibreChat",
+      "github_url": "https://github.com/LibreChat-AI/LibreChat",
+      "stars": 46555,
+      "stars_added_period": 2619,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/LibreChat-AI/LibreChat/blob/main/README.md",
+        "https://github.com/LibreChat-AI/LibreChat/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Dify",
+      "category_id": "workflow-business",
+      "kind": "platform",
+      "intro": "A visual platform combining agent workflows, retrieval pipelines, model management, and deployment. Its license adds conditions beyond standard Apache-2.0.",
+      "utilities": [
+        "Compose model and tool steps on a visual workflow canvas.",
+        "Build document-grounded applications with managed model configuration."
+      ],
+      "audience": [
+        "Teams that prefer an application-building workspace over assembling every component in code."
+      ],
+      "example": "Illustrative, not tested: build an internal document-answering workflow with a human-review step before publishing its response.",
+      "requirements": [
+        "Docker Compose setup documents a minimum of 2 CPU cores and 4 GiB RAM.",
+        "Configure model credentials, persistent services, and production access controls."
+      ],
+      "limitations": [
+        "The modified license restricts certain multi-tenant and branding uses.",
+        "Workflow composition does not remove the need to test tool actions and retrieval quality."
+      ],
+      "cost_notes": [
+        "Cloud plans, model calls, and self-hosted infrastructure have separate costs.",
+        "Review where documents, workflow logs, and plugin calls are stored or transmitted."
+      ],
+      "license": "Dify Open Source License: modified Apache-2.0 with additional multi-tenant and branding conditions; review LICENSE before commercial deployment.",
+      "id": "626805178",
+      "slug": "dify-626805178",
+      "full_name": "langgenius/dify",
+      "github_url": "https://github.com/langgenius/dify",
+      "stars": 160080,
+      "stars_added_period": 3729,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/langgenius/dify/blob/main/README.md",
+        "https://github.com/langgenius/dify/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "636553615",
+      "slug": "open-agent-email-636553615",
+      "full_name": "Anil-matcha/open-agent-email",
+      "github_url": "https://github.com/Anil-matcha/open-agent-email",
+      "name": "Open Agent Email",
+      "category_id": "agent-operations",
+      "kind": "infrastructure",
+      "stars": 2118,
+      "stars_added_period": 68,
+      "metrics_as_of": "2026-10-31T14:03:58.829037Z",
+      "profile_kind": "brief",
+      "intro": "Self-hosted email infrastructure with per-agent mailboxes, API/SDK access, and approval controls for risky outgoing messages. It focuses on an agent's email identity and conversation flow rather than general application orchestration.",
+      "utilities": [],
+      "audience": [],
+      "example": "",
+      "requirements": [],
+      "limitations": [],
+      "cost_notes": [],
+      "license": "",
+      "source_urls": [
+        "https://github.com/Anil-matcha/open-agent-email/blob/main/README.md"
+      ],
+      "reviewed_at": "2026-10-31T14:07:48.119191Z"
+    },
+    {
+      "name": "LobeHub",
+      "category_id": "personal-workspaces",
+      "kind": "platform",
+      "intro": "A workspace for creating, scheduling, and collaborating with agent teammates. It combines conversational interfaces with operator and integration features.",
+      "utilities": [
+        "Organize agents and conversations in a shared workspace.",
+        "Schedule agent tasks and connect supported messaging or tool integrations."
+      ],
+      "audience": [
+        "Individuals and teams wanting a browser-based agent workspace."
+      ],
+      "example": "Illustrative, not tested: create a document-summary agent and review its work before scheduling recurring runs.",
+      "requirements": [
+        "Use a supported hosted or self-hosted deployment such as Docker.",
+        "Configure models, persistence, and any messaging integrations."
+      ],
+      "limitations": [
+        "The Community License adds commercial derivative-work restrictions.",
+        "Agent scheduling and collaboration do not eliminate the need for human review."
+      ],
+      "cost_notes": [
+        "Hosting, provider usage, and commercial licensing/features may have separate costs.",
+        "Review conversation storage and connected-model data handling; self-hosting does not imply local inference."
+      ],
+      "license": "LobeHub Community License, based on Apache-2.0 with additional commercial conditions; review LICENSE rather than treating it as standard Apache-2.0.",
+      "id": "643445235",
+      "slug": "lobehub-643445235",
+      "full_name": "lobehub/lobehub",
+      "github_url": "https://github.com/lobehub/lobehub",
+      "stars": 83636,
+      "stars_added_period": 1052,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/lobehub/lobehub/blob/canary/README.md",
+        "https://github.com/lobehub/lobehub/blob/canary/LICENSE"
+      ]
+    },
+    {
+      "name": "AnythingLLM",
+      "category_id": "knowledge-memory",
+      "kind": "platform",
+      "intro": "A local-first application for document chat, agent tools, and configurable model connections. Desktop and self-hosted deployments support different operating needs.",
+      "utilities": [
+        "Ingest documents into a conversational workspace.",
+        "Use built-in agents and memory with local or cloud model providers."
+      ],
+      "audience": [
+        "Individuals and teams who want a document-and-agent workspace rather than a framework."
+      ],
+      "example": "Illustrative, not tested: ingest a non-sensitive handbook and ask for a source-grounded summary.",
+      "requirements": [
+        "Install a supported desktop application or self-hosted deployment.",
+        "Choose model, embedding, and storage settings appropriate to your documents."
+      ],
+      "limitations": [
+        "Multi-user permissions and some workspace features are deployment-specific.",
+        "Retrieved document context does not prevent unsupported generated answers."
+      ],
+      "cost_notes": [
+        "Local models need hardware; remote providers and hosting can add costs.",
+        "Local-first does not mean local-only if embeddings, tools, or models use external services."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "649170660",
+      "slug": "anythingllm-649170660",
+      "full_name": "Mintplex-Labs/anything-llm",
+      "github_url": "https://github.com/Mintplex-Labs/anything-llm",
+      "stars": 67784,
+      "stars_added_period": 1317,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/Mintplex-Labs/anything-llm/blob/master/README.md",
+        "https://github.com/Mintplex-Labs/anything-llm/blob/master/LICENSE"
+      ]
+    },
+    {
+      "name": "Mem0",
+      "category_id": "knowledge-memory",
+      "kind": "infrastructure",
+      "intro": "A memory layer for retaining and retrieving information across agent interactions. It offers a library, a self-hosted server, and a managed platform with distinct feature scopes.",
+      "utilities": [
+        "Store user- or agent-specific context for later retrieval.",
+        "Add persistent memory to an existing application."
+      ],
+      "audience": [
+        "Developers who need memory infrastructure around their own agents."
+      ],
+      "example": "Illustrative, not tested: store a user's explicitly approved preference and check what the agent retrieves in a later session.",
+      "requirements": [
+        "Install the Python library, deploy the server, or configure managed-platform access.",
+        "Configure model, embedding, storage, and authentication settings."
+      ],
+      "limitations": [
+        "Memory extraction and retrieval can retain incorrect or outdated information.",
+        "The README's managed-platform benchmarks include proprietary optimizations absent from the open-source SDK."
+      ],
+      "cost_notes": [
+        "Model extraction, embeddings, storage, and hosted usage can add separate charges.",
+        "Persistent memories need consent, user isolation, deletion, and retention policies."
+      ],
+      "license": "Apache-2.0 for the public repository; managed-platform optimizations and services have separate scope.",
+      "id": "656099147",
+      "slug": "mem0-656099147",
+      "full_name": "mem0ai/mem0",
+      "github_url": "https://github.com/mem0ai/mem0",
+      "stars": 68148,
+      "stars_added_period": 2042,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/mem0ai/mem0/blob/main/README.md",
+        "https://github.com/mem0ai/mem0/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "MetaGPT",
+      "category_id": "frameworks",
+      "kind": "framework",
+      "intro": "A multi-agent framework organized around software-team roles and procedures. It turns a requirement into coordinated planning and development artifacts.",
+      "utilities": [
+        "Experiment with role-based requirements, design, and implementation workflows.",
+        "Study how explicit procedures structure agent collaboration."
+      ],
+      "audience": [
+        "Developers and researchers exploring software-development multi-agent systems."
+      ],
+      "example": "Illustrative, not tested: request a small application's requirements and API design, then review the artifacts before any implementation.",
+      "requirements": [
+        "The README specifies Python 3.9 or later but below 3.12.",
+        "Install the framework and configure the required model access."
+      ],
+      "limitations": [
+        "Generated documents and code still need engineering review.",
+        "Role-based output is not proof that an autonomous team can deliver a reliable product."
+      ],
+      "cost_notes": [
+        "Multi-stage model usage can add up; start with a small bounded task.",
+        "Requirements, design documents, and generated code may be transmitted to configured providers."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "660551251",
+      "slug": "metagpt-660551251",
+      "full_name": "FoundationAgents/MetaGPT",
+      "github_url": "https://github.com/FoundationAgents/MetaGPT",
+      "stars": 71102,
+      "stars_added_period": 672,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/FoundationAgents/MetaGPT/blob/main/README.md",
+        "https://github.com/FoundationAgents/MetaGPT/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Open Interpreter",
+      "category_id": "coding",
+      "kind": "agent",
+      "intro": "The current Open Interpreter is a coding agent focused on harness configurations for lower-cost models. Its README describes a Codex-derived implementation with selectable harnesses and ACP compatibility.",
+      "utilities": [
+        "Run coding sessions with the documented model-provider harnesses.",
+        "Connect an ACP-compatible editor or client to the terminal agent."
+      ],
+      "audience": [
+        "Developers comparing model and harness choices for coding workflows."
+      ],
+      "example": "Illustrative, not tested: configure a supported provider, select a harness, and request a small reviewed bug fix.",
+      "requirements": [
+        "Install the supported terminal application for your platform.",
+        "Configure the chosen provider and any ACP client integration."
+      ],
+      "limitations": [
+        "Do not assume tutorials for older Python-based Open Interpreter releases describe the current application.",
+        "Harness compatibility is not proof of equivalent performance or behavior across models."
+      ],
+      "cost_notes": [
+        "Provider prices and local hardware costs vary; no cost savings are measured here.",
+        "Check provider routing before sending source files or command output."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "666299222",
+      "slug": "open-interpreter-666299222",
+      "full_name": "openinterpreter/openinterpreter",
+      "github_url": "https://github.com/openinterpreter/openinterpreter",
+      "stars": 68750,
+      "stars_added_period": 387,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/openinterpreter/openinterpreter/blob/main/README.md",
+        "https://github.com/openinterpreter/openinterpreter/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "LangGraph",
+      "category_id": "frameworks",
+      "kind": "framework",
+      "intro": "A low-level orchestration framework for long-running, stateful agent workflows. It provides graph control, persistence, and human-in-the-loop mechanisms rather than a finished assistant.",
+      "utilities": [
+        "Represent agent state and transitions explicitly.",
+        "Add persistence and human interrupts to multi-step workflows."
+      ],
+      "audience": [
+        "Developers who need control over agent execution and recovery."
+      ],
+      "example": "Illustrative, not tested: pause a workflow before an external write, inspect its state, and resume after approval.",
+      "requirements": [
+        "Install the Python package or use the separate JavaScript implementation.",
+        "Configure models, tools, and persistent state storage for the application."
+      ],
+      "limitations": [
+        "Durability depends on the application's persistence and side-effect design.",
+        "Framework control does not guarantee correct model decisions."
+      ],
+      "cost_notes": [
+        "Models, storage, and optional managed deployment/observability can incur separate charges.",
+        "Persisted checkpoints and traces can retain prompts and tool results."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "676672661",
+      "slug": "langgraph-676672661",
+      "full_name": "langchain-ai/langgraph",
+      "github_url": "https://github.com/langchain-ai/langgraph",
+      "stars": 44211,
+      "stars_added_period": 1784,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/langchain-ai/langgraph/blob/main/README.md",
+        "https://github.com/langchain-ai/langgraph/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "AutoGen",
+      "category_id": "frameworks",
+      "kind": "framework",
+      "intro": "A historical multi-agent application framework. Its current README says the project is archived and no longer maintained, even though the live GitHub archive flag was unset at collection.",
+      "utilities": [
+        "Study existing multi-agent conversation and orchestration patterns.",
+        "Understand older AutoGen applications when planning a migration."
+      ],
+      "audience": [
+        "Maintainers of existing AutoGen systems and researchers studying its design."
+      ],
+      "example": "Illustrative, not tested: inspect an existing AgentChat workflow and map its behavior before migrating to the supported successor.",
+      "requirements": [
+        "Documented packages require Python 3.10+ and configured model access.",
+        "Review the Microsoft Agent Framework migration guidance before starting new work."
+      ],
+      "limitations": [
+        "The README says Microsoft no longer provides fixes, features, or support and advises against production use.",
+        "Dependency vulnerabilities may remain unaddressed; stars and an unset archive flag do not establish maintenance."
+      ],
+      "cost_notes": [
+        "Model calls and execution environments can incur costs even for historical experiments.",
+        "Do not process sensitive data without assessing the unmaintained stack and any code-execution tools."
+      ],
+      "license": "MIT for code under LICENSE-CODE; documentation/content under CC-BY-4.0 LICENSE, with trademarks excluded.",
+      "id": "680120071",
+      "slug": "autogen-680120071",
+      "full_name": "microsoft/autogen",
+      "github_url": "https://github.com/microsoft/autogen",
+      "stars": 61646,
+      "stars_added_period": 597,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/microsoft/autogen/blob/main/README.md",
+        "https://github.com/microsoft/autogen/blob/main/LICENSE",
+        "https://github.com/microsoft/autogen/blob/main/LICENSE-CODE",
+        "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/"
+      ]
+    },
+    {
+      "name": "CrewAI",
+      "category_id": "frameworks",
+      "kind": "framework",
+      "intro": "A Python framework combining role-based agent crews with event-driven flows. It provides abstractions for collaborative agents while leaving tools and application logic to developers.",
+      "utilities": [
+        "Define specialized agents and tasks within a crew.",
+        "Combine agent collaboration with explicit workflow state and control."
+      ],
+      "audience": [
+        "Developers implementing multi-agent automations in Python."
+      ],
+      "example": "Illustrative, not tested: have one agent gather public sources and another draft a summary, then require a human source check.",
+      "requirements": [
+        "The reviewed README requires Python 3.10 through 3.13 and recommends uv.",
+        "Configure provider credentials and any search or tool credentials."
+      ],
+      "limitations": [
+        "Role descriptions do not establish expertise or reliable collaboration.",
+        "Multiple agents can repeat errors or amplify costs; validate outputs and stopping conditions."
+      ],
+      "cost_notes": [
+        "Model/tool usage and the commercial control plane are separate from the MIT library.",
+        "Anonymous telemetry is documented; disable with OTEL_SDK_DISABLED=true if required, and review share_crew before enabling detailed sharing."
+      ],
+      "license": "MIT for the public framework; commercial control-plane services have separate terms.",
+      "id": "710601088",
+      "slug": "crewai-710601088",
+      "full_name": "crewAIInc/crewAI",
+      "github_url": "https://github.com/crewAIInc/crewAI",
+      "stars": 60336,
+      "stars_added_period": 1422,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/crewAIInc/crewAI/blob/main/README.md",
+        "https://github.com/crewAIInc/crewAI/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "RAGFlow",
+      "category_id": "knowledge-memory",
+      "kind": "platform",
+      "intro": "A retrieval and agent platform for turning documents into usable model context. Its current documentation combines document processing, knowledge compilation, and agent workflows.",
+      "utilities": [
+        "Parse and index documents for retrieval-augmented answers.",
+        "Build agent workflows using datasets and prebuilt templates."
+      ],
+      "audience": [
+        "Teams building document-grounded assistants and knowledge pipelines."
+      ],
+      "example": "Illustrative, not tested: index a small document set and verify an answer against the retrieved passages.",
+      "requirements": [
+        "Docker deployment recommends 4 CPU cores, 16 GB RAM, and 50 GB disk as a starting point.",
+        "Configure the document engine, storage services, and model/embedding access."
+      ],
+      "limitations": [
+        "Resource requirements scale with parsing jobs, document volume, and concurrency.",
+        "Retrieval and citations still require evaluation against the underlying documents."
+      ],
+      "cost_notes": [
+        "Parsing, storage, model calls, and hosting can each contribute to cost.",
+        "Review document retention and external model/embedding routing before ingesting confidential files."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "730534580",
+      "slug": "ragflow-730534580",
+      "full_name": "infiniflow/ragflow",
+      "github_url": "https://github.com/infiniflow/ragflow",
+      "stars": 93248,
+      "stars_added_period": 1955,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/infiniflow/ragflow/blob/main/README.md",
+        "https://github.com/infiniflow/ragflow/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Composio",
+      "category_id": "agent-operations",
+      "kind": "infrastructure",
+      "intro": "An SDK and service interface for connecting agents to authenticated application tools. It provides per-user sessions, integrations, triggers, and provider adapters.",
+      "utilities": [
+        "Supply scoped application tools to an existing agent.",
+        "Manage user-specific connections and trigger-driven integrations."
+      ],
+      "audience": [
+        "Developers building agents that act across external business applications."
+      ],
+      "example": "Illustrative, not tested: connect a read-only demonstration inbox and ask an agent to summarize messages without sending mail.",
+      "requirements": [
+        "The Python SDK supports Python 3.10+; TypeScript is tested against Node 22+.",
+        "Obtain service access and configure scoped connected accounts."
+      ],
+      "limitations": [
+        "The public SDK is not the entire hosted integration service.",
+        "Authentication support does not make every available action appropriate for an autonomous agent."
+      ],
+      "cost_notes": [
+        "Service usage, model calls, and third-party applications may have separate charges.",
+        "OAuth grants, account data, and tool payloads cross connected services; use per-user isolation and least privilege."
+      ],
+      "license": "MIT for the public SDK repository; hosted service and third-party integrations have separate terms.",
+      "id": "762304524",
+      "slug": "composio-762304524",
+      "full_name": "ComposioHQ/composio",
+      "github_url": "https://github.com/ComposioHQ/composio",
+      "stars": 30839,
+      "stars_added_period": 470,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/ComposioHQ/composio/blob/next/README.md",
+        "https://github.com/ComposioHQ/composio/blob/next/LICENSE"
+      ]
+    },
+    {
+      "name": "Stagehand",
+      "category_id": "browser-automation",
+      "kind": "framework",
+      "intro": "A browser-agent SDK for natural-language actions, observation, and structured extraction. It lets application code combine ordinary browser control with model-assisted steps.",
+      "utilities": [
+        "Extract schema-validated information from browser pages.",
+        "Use observed selectors and programmatic control alongside natural-language actions."
+      ],
+      "audience": [
+        "Developers who need a programmable browser workflow rather than a standalone assistant."
+      ],
+      "example": "Illustrative, not tested: load a public catalog and extract product names into a predefined schema.",
+      "requirements": [
+        "Install the SDK for the documented language and provide a supported model.",
+        "Use a local browser or configure hosted browser access."
+      ],
+      "limitations": [
+        "Schema validation checks output shape, not factual completeness.",
+        "Model-assisted actions still depend on page structure, session state, and site permissions."
+      ],
+      "cost_notes": [
+        "Model calls and hosted-browser sessions can have separate charges.",
+        "Keep credentials out of prompts; review what page content reaches the model and where browser sessions persist."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "776908852",
+      "slug": "stagehand-776908852",
+      "full_name": "browserbase/stagehand",
+      "github_url": "https://github.com/browserbase/stagehand",
+      "stars": 25889,
+      "stars_added_period": 1411,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/browserbase/stagehand/blob/main/README.md",
+        "https://github.com/browserbase/stagehand/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Vane",
+      "category_id": "research",
+      "kind": "platform",
+      "intro": "A self-hostable answering engine combining web search, uploaded documents, and local or cloud models. It exposes source-cited answers through a browser interface.",
+      "utilities": [
+        "Search web, discussion, or academic sources for a question.",
+        "Ask questions about uploaded files with retrieved context."
+      ],
+      "audience": [
+        "Users who want control over an answering-engine deployment and model selection."
+      ],
+      "example": "Illustrative, not tested: ask for sources comparing two standards and manually check the cited pages.",
+      "requirements": [
+        "Docker is the recommended installation route; a bundled SearxNG deployment is available.",
+        "Configure local Ollama models or supported cloud credentials."
+      ],
+      "limitations": [
+        "Citations do not guarantee that generated statements are supported.",
+        "Self-hosting does not make external search engines or cloud models private."
+      ],
+      "cost_notes": [
+        "Local inference requires suitable hardware; cloud models and hosting may have separate costs.",
+        "Search requests, uploaded content, and model calls follow the configured services' data policies."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "784181462",
+      "slug": "vane-784181462",
+      "full_name": "ItzCrazyKns/Vane",
+      "github_url": "https://github.com/ItzCrazyKns/Vane",
+      "stars": 37886,
+      "stars_added_period": 471,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/ItzCrazyKns/Vane/blob/master/README.md",
+        "https://github.com/ItzCrazyKns/Vane/blob/master/LICENSE"
+      ]
+    },
+    {
+      "name": "Firecrawl",
+      "category_id": "browser-automation",
+      "kind": "infrastructure",
+      "intro": "A web-data API for search, scraping, document parsing, and interaction. It supplies agent-ready content and structured extraction, with both public code and a hosted service.",
+      "utilities": [
+        "Convert web pages into Markdown or structured JSON for an agent.",
+        "Search and retrieve source material for retrieval pipelines."
+      ],
+      "audience": [
+        "Developers building agents that need web or document context."
+      ],
+      "example": "Illustrative, not tested: scrape public documentation into Markdown and check the result before indexing it.",
+      "requirements": [
+        "Use a hosted API key or follow the self-hosting documentation.",
+        "Configure the client SDK and any required deployment services."
+      ],
+      "limitations": [
+        "The hosted service includes capabilities beyond the open-source deployment.",
+        "Extraction can omit content, and website terms still constrain collection."
+      ],
+      "cost_notes": [
+        "Hosted API credits, model-assisted operations, and self-hosted infrastructure have different costs.",
+        "Requests and retrieved documents pass through whichever hosted or self-hosted components you configure."
+      ],
+      "license": "AGPL-3.0 for repository code; hosted service terms and additional components require separate review.",
+      "id": "787076358",
+      "slug": "firecrawl-787076358",
+      "full_name": "firecrawl/firecrawl",
+      "github_url": "https://github.com/firecrawl/firecrawl",
+      "stars": 197280,
+      "stars_added_period": 12659,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/firecrawl/firecrawl/blob/main/README.md",
+        "https://github.com/firecrawl/firecrawl/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Crawl4AI",
+      "category_id": "browser-automation",
+      "kind": "infrastructure",
+      "intro": "A crawler and scraper that turns websites into Markdown for retrieval systems and agents. It can run in your own Python process, a Docker server, or a hosted service.",
+      "utilities": [
+        "Build web-to-Markdown ingestion pipelines.",
+        "Extract structured content using configured crawling and extraction strategies."
+      ],
+      "audience": [
+        "Developers who want control over web collection infrastructure."
+      ],
+      "example": "Illustrative, not tested: crawl an allowlisted documentation section and inspect its Markdown before using it in retrieval.",
+      "requirements": [
+        "Install the Python package and browser setup, or deploy the Docker server.",
+        "Configure model credentials only for the extraction features that need them."
+      ],
+      "limitations": [
+        "Crawling is infrastructure, not an autonomous task planner.",
+        "Site access rules, dynamic content, and extraction settings affect coverage."
+      ],
+      "cost_notes": [
+        "Local crawling uses your compute and bandwidth; optional models and cloud services can incur charges.",
+        "Review collected content, browser state, and model routing; self-hosting does not remove website privacy obligations."
+      ],
+      "license": "Apache-2.0; reviewed LICENSE and README attribution guidance.",
+      "id": "798201435",
+      "slug": "crawl4ai-798201435",
+      "full_name": "unclecode/crawl4ai",
+      "github_url": "https://github.com/unclecode/crawl4ai",
+      "stars": 86637,
+      "stars_added_period": 4139,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/unclecode/crawl4ai/blob/main/README.md",
+        "https://github.com/unclecode/crawl4ai/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "BettaFish",
+      "category_id": "research",
+      "kind": "agent",
+      "intro": "A multi-agent system for researching public opinion and social-media material. Its documented workflows combine collection, analysis, and report generation rather than just a chat interface.",
+      "utilities": [
+        "Collect and synthesize material about a public discussion topic.",
+        "Produce reports using specialized analysis agents and configured data sources."
+      ],
+      "audience": [
+        "Researchers and analysts who can assess collection legality and source bias."
+      ],
+      "example": "Illustrative, not tested: analyze a public product announcement and compare the report's claims with its original posts.",
+      "requirements": [
+        "Deploy the Python/database stack or documented Docker Compose setup.",
+        "Configure model and data-provider access appropriate to the selected sources."
+      ],
+      "limitations": [
+        "Social-media coverage can be incomplete, biased, or constrained by platform access.",
+        "Generated sentiment and predictions are not validated outcomes or a substitute for source review."
+      ],
+      "cost_notes": [
+        "Model calls, data access, and collection infrastructure can incur separate costs.",
+        "Respect platform terms and personal-data rules; avoid collecting private or unnecessary individual information."
+      ],
+      "license": "GPL-2.0; reviewed the repository LICENSE. Review redistribution obligations and any third-party data terms.",
+      "id": "822604462",
+      "slug": "bettafish-822604462",
+      "full_name": "666ghj/BettaFish",
+      "github_url": "https://github.com/666ghj/BettaFish",
+      "stars": 42558,
+      "stars_added_period": 287,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/666ghj/BettaFish/blob/main/README.md",
+        "https://github.com/666ghj/BettaFish/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Cline",
+      "category_id": "coding",
+      "kind": "agent",
+      "intro": "A coding agent available through editor extensions, a CLI, a desktop app, and an SDK. Plan/act workflows and human approvals are central to its documented repository experience.",
+      "utilities": [
+        "Explore and edit code through editor or terminal sessions.",
+        "Build integrations using the same engine's SDK."
+      ],
+      "audience": [
+        "Developers who want agent tools with review controls across multiple interfaces."
+      ],
+      "example": "Illustrative, not tested: ask Cline to plan a refactor, then inspect each proposed edit and command in an approval-based session.",
+      "requirements": [
+        "Install the interface appropriate to your editor or operating system.",
+        "Configure a supported model provider and repository access."
+      ],
+      "limitations": [
+        "Approval controls depend on the interface and operating mode; inspect the active configuration.",
+        "Tool access can extend beyond code editing into commands and browsing."
+      ],
+      "cost_notes": [
+        "Apache-2.0 code does not include free model usage.",
+        "Repository text and tool results may reach configured model endpoints or connected services."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "824874689",
+      "slug": "cline-824874689",
+      "full_name": "cline/cline",
+      "github_url": "https://github.com/cline/cline",
+      "stars": 71095,
+      "stars_added_period": 2579,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/cline/cline/blob/main/README.md",
+        "https://github.com/cline/cline/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "goose",
+      "category_id": "coding",
+      "kind": "agent",
+      "intro": "A general-purpose agent with desktop, CLI, and API interfaces. It combines model-provider choice with extensible tools, including MCP integrations, for coding and other local workflows.",
+      "utilities": [
+        "Use tools to inspect, edit, execute, and test development work.",
+        "Extend an agent session with supported MCP services."
+      ],
+      "audience": [
+        "Developers and technical users who want an extensible local agent."
+      ],
+      "example": "Illustrative, not tested: ask goose to investigate a test failure with read-only access first, then review its proposed fix.",
+      "requirements": [
+        "Install the desktop app or CLI for a supported platform.",
+        "Configure a model provider and only the extensions needed for the task."
+      ],
+      "limitations": [
+        "General-purpose tool access can affect files and external services.",
+        "Each extension brings its own permissions and dependencies."
+      ],
+      "cost_notes": [
+        "Model subscriptions/API usage and external extensions may incur separate charges.",
+        "A local agent process can still send prompts and tool results to remote providers."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "846698999",
+      "slug": "goose-846698999",
+      "full_name": "aaif-goose/goose",
+      "github_url": "https://github.com/aaif-goose/goose",
+      "stars": 56030,
+      "stars_added_period": 1212,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/aaif-goose/goose/blob/main/README.md",
+        "https://github.com/aaif-goose/goose/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Browser Use",
+      "category_id": "browser-automation",
+      "kind": "agent",
+      "intro": "A tool-using browser agent available as a local library/CLI and a hosted cloud service. The agent decides browser actions from task instructions and a configured model.",
+      "utilities": [
+        "Navigate websites and carry out reviewed multi-step browser tasks.",
+        "Integrate browser actions into an agent application."
+      ],
+      "audience": [
+        "Developers and technical users building browser-based agent workflows."
+      ],
+      "example": "Illustrative, not tested: collect public event dates from a website without logging in or submitting forms.",
+      "requirements": [
+        "Follow the current Python 3.12 quickstart or supported CLI/library instructions.",
+        "Provide a supported model and local browser, or cloud credentials for hosted execution."
+      ],
+      "limitations": [
+        "Dynamic sites, login state, and anti-automation controls can interrupt tasks.",
+        "Browser actions can submit forms or change account data; use narrow permissions and approvals."
+      ],
+      "cost_notes": [
+        "Local model/browser resources and hosted agent/browser usage are different cost paths; check current pricing.",
+        "Browser profiles, cookies, screenshots, and page content may reach the selected model or cloud service."
+      ],
+      "license": "MIT for repository code; hosted services have separate terms.",
+      "id": "881458615",
+      "slug": "browser-use-881458615",
+      "full_name": "browser-use/browser-use",
+      "github_url": "https://github.com/browser-use/browser-use",
+      "stars": 119640,
+      "stars_added_period": 5040,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/browser-use/browser-use/blob/main/README.md",
+        "https://github.com/browser-use/browser-use/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "TradingAgents",
+      "category_id": "domain-specific",
+      "kind": "framework",
+      "intro": "A research framework that coordinates analyst, researcher, and trader roles over market information. Its generated decisions are research artifacts, not investment advice.",
+      "utilities": [
+        "Study multi-agent financial analysis and debate workflows.",
+        "Generate inspectable reports using configured market-data and model providers."
+      ],
+      "audience": [
+        "Researchers evaluating agent-based financial-analysis methods."
+      ],
+      "example": "Illustrative, not tested: analyze a historical ticker/date and inspect whether every cited input was available at that time.",
+      "requirements": [
+        "Python 3.11+ or the documented Docker deployment.",
+        "Configure model access and the market-data providers required by the chosen workflow."
+      ],
+      "limitations": [
+        "The project explicitly disclaims financial, investment, and trading advice.",
+        "Backtests and generated decisions depend on data timing, quality, assumptions, and nondeterministic model output."
+      ],
+      "cost_notes": [
+        "Data access, models, and repeated analysis/backtests can incur costs.",
+        "Do not expose account credentials or treat generated decisions as authorization to trade."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "909213664",
+      "slug": "tradingagents-909213664",
+      "full_name": "TauricResearch/TradingAgents",
+      "github_url": "https://github.com/TauricResearch/TradingAgents",
+      "stars": 118885,
+      "stars_added_period": 7566,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/TauricResearch/TradingAgents/blob/main/README.md",
+        "https://github.com/TauricResearch/TradingAgents/blob/main/LICENSE",
+        "https://tauric.ai/disclaimer/"
+      ]
+    },
+    {
+      "name": "Claude Code",
+      "category_id": "coding",
+      "kind": "agent",
+      "intro": "Anthropic's coding tool works from a terminal, IDE, or GitHub integration to explain code and carry out development tasks. Its public repository is not an open-source license for the product.",
+      "utilities": [
+        "Explain code paths and carry out routine repository changes.",
+        "Work through Git tasks using natural-language instructions."
+      ],
+      "audience": [
+        "Developers using Anthropic's coding tools and account access."
+      ],
+      "example": "Illustrative, not tested: ask Claude Code to explain a failing test and prepare a small fix for review.",
+      "requirements": [
+        "Use a supported native installer, Homebrew, or WinGet; npm installation is deprecated.",
+        "Arrange supported Anthropic account or provider access and project permissions."
+      ],
+      "limitations": [
+        "Use is subject to commercial terms, not a permissive source-code license.",
+        "Generated edits and shell actions still need developer review."
+      ],
+      "cost_notes": [
+        "Access and usage depend on the chosen account plan or provider arrangement; check current terms.",
+        "The README documents feedback and usage-data collection; review the linked data-usage policy before sharing code."
+      ],
+      "license": "Proprietary/commercial terms: LICENSE.md reserves rights to Anthropic and refers to its Commercial Terms of Service.",
+      "id": "937253475",
+      "slug": "claude-code-937253475",
+      "full_name": "anthropics/claude-code",
+      "github_url": "https://github.com/anthropics/claude-code",
+      "stars": 154030,
+      "stars_added_period": 5470,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/anthropics/claude-code/blob/main/README.md",
+        "https://github.com/anthropics/claude-code/blob/main/LICENSE.md",
+        "https://code.claude.com/docs/en/data-usage",
+        "https://www.anthropic.com/legal/commercial-terms"
+      ]
+    },
+    {
+      "name": "Agent Development Kit",
+      "category_id": "frameworks",
+      "kind": "framework",
+      "intro": "Google's code-first Python toolkit for building, evaluating, and deploying agent workflows. It is optimized for Gemini but documents model- and deployment-agnostic operation.",
+      "utilities": [
+        "Compose graph workflows and structured agent delegation.",
+        "Connect tools and evaluate an agent application before deployment."
+      ],
+      "audience": [
+        "Python developers who want a modular agent runtime."
+      ],
+      "example": "Illustrative, not tested: build an agent with one read-only tool and evaluate a small set of expected responses.",
+      "requirements": [
+        "The current README requires Python 3.11+.",
+        "Install google-adk and configure the selected model and deployment credentials."
+      ],
+      "limitations": [
+        "Compatibility and evaluation depend on the chosen model/tool stack.",
+        "Toolkit features do not establish that an application is safe or production-ready."
+      ],
+      "cost_notes": [
+        "Model usage, tools, and deployed infrastructure are not included in the Apache-2.0 toolkit.",
+        "Review sessions, telemetry, and provider routing before processing confidential content."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "958830659",
+      "slug": "agent-development-kit-958830659",
+      "full_name": "google/adk-python",
+      "github_url": "https://github.com/google/adk-python",
+      "stars": 22057,
+      "stars_added_period": 368,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/google/adk-python/blob/main/README.md",
+        "https://github.com/google/adk-python/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Codex CLI",
+      "category_id": "coding",
+      "kind": "agent",
+      "intro": "OpenAI's local coding agent provides a terminal interface for repository work. The CLI is distinct from Codex's hosted web and desktop experiences.",
+      "utilities": [
+        "Inspect and change a local codebase through a coding-agent session.",
+        "Integrate a terminal-based coding workflow with existing development tools."
+      ],
+      "audience": [
+        "Developers who want OpenAI's coding agent in a local terminal."
+      ],
+      "example": "Illustrative, not tested: ask the CLI to trace a parser bug and propose a regression test before applying a change.",
+      "requirements": [
+        "Install a platform-appropriate binary or supported package.",
+        "Use supported account authentication or configure API-key access."
+      ],
+      "limitations": [
+        "Running the CLI locally does not mean the model also runs locally.",
+        "Review generated code and execution permissions before relying on changes."
+      ],
+      "cost_notes": [
+        "CLI code is Apache-2.0; model access can require a subscription or metered API usage.",
+        "Check authentication-specific data terms before sending repository content."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "965415649",
+      "slug": "codex-cli-965415649",
+      "full_name": "openai/codex",
+      "github_url": "https://github.com/openai/codex",
+      "stars": 132388,
+      "stars_added_period": 7186,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/openai/codex/blob/main/README.md",
+        "https://github.com/openai/codex/blob/main/LICENSE",
+        "https://developers.openai.com/codex/auth"
+      ]
+    },
+    {
+      "name": "Gemini CLI",
+      "category_id": "coding",
+      "kind": "agent",
+      "intro": "Google's terminal agent is now documented for enterprise Code Assist access. The current README directs free individual and Google AI Pro/Ultra users to Antigravity CLI instead.",
+      "utilities": [
+        "Use a terminal agent with supported enterprise Code Assist workflows.",
+        "Connect development tools through the documented CLI configuration."
+      ],
+      "audience": [
+        "Developers with supported organizational Code Assist access."
+      ],
+      "example": "Illustrative, not tested: use an authorized enterprise account to ask for an explanation of a module and a reviewed change plan.",
+      "requirements": [
+        "Install a supported CLI release and configure the applicable Google account or credentials.",
+        "For organizational Code Assist access, set the required Google Cloud project."
+      ],
+      "limitations": [
+        "Do not assume older free-tier instructions apply: the README documents the June 2026 transition.",
+        "The README says the harness is not optimized for Gemini 4+ and should not be used for model benchmarks."
+      ],
+      "cost_notes": [
+        "Access depends on the organization's license or configured provider billing; confirm eligibility before installing.",
+        "Review the CLI's telemetry and terms/privacy settings before exposing code."
+      ],
+      "license": "Apache-2.0 for the repository code; service access remains subject to separate terms.",
+      "id": "968197216",
+      "slug": "gemini-cli-968197216",
+      "full_name": "google-gemini/gemini-cli",
+      "github_url": "https://github.com/google-gemini/gemini-cli",
+      "stars": 108643,
+      "stars_added_period": 816,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/google-gemini/gemini-cli/blob/main/README.md",
+        "https://github.com/google-gemini/gemini-cli/blob/main/LICENSE",
+        "https://www.geminicli.com/docs/resources/tos-privacy",
+        "https://www.geminicli.com/docs/cli/telemetry"
+      ]
+    },
+    {
+      "name": "OpenCode",
+      "category_id": "coding",
+      "kind": "agent",
+      "intro": "A coding agent with terminal and desktop interfaces. Its separate plan and build modes let you explore a repository before giving the agent permission to change it.",
+      "utilities": [
+        "Explore unfamiliar code and plan changes in a read-only mode.",
+        "Implement changes with an agent that can use development tools."
+      ],
+      "audience": [
+        "Developers who want a configurable coding agent rather than editor-only suggestions."
+      ],
+      "example": "Illustrative, not tested: ask plan mode to map a service's request flow, then review a proposed patch before switching to build mode.",
+      "requirements": [
+        "Install a supported CLI package or desktop release.",
+        "Configure access to a supported model and the repository you intend to work on."
+      ],
+      "limitations": [
+        "Build mode can change files and execute tools; review permissions and diffs.",
+        "The desktop application is labeled beta in the reviewed README."
+      ],
+      "cost_notes": [
+        "Model-provider usage or subscriptions can cost money independently of the MIT code.",
+        "Check where the configured provider and connected tools send repository content."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "975734319",
+      "slug": "opencode-975734319",
+      "full_name": "anomalyco/opencode",
+      "github_url": "https://github.com/anomalyco/opencode",
+      "stars": 223468,
+      "stars_added_period": 8930,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/anomalyco/opencode/blob/dev/README.md",
+        "https://github.com/anomalyco/opencode/blob/dev/LICENSE"
+      ]
+    },
+    {
+      "name": "DeerFlow",
+      "category_id": "research",
+      "kind": "agent",
+      "intro": "DeerFlow 2 is a long-horizon agent harness using subagents, memory, skills, and sandboxes. It is broader than the original research framework, which remains on a separate 1.x branch.",
+      "utilities": [
+        "Break a research or creation task into tool-using subagent work.",
+        "Run longer tasks with sandboxed execution and persistent context."
+      ],
+      "audience": [
+        "Technical teams experimenting with research and multi-step agent workflows."
+      ],
+      "example": "Illustrative, not tested: request a source-linked comparison of two developer tools and review each supporting reference.",
+      "requirements": [
+        "Deploy the documented stack; Docker is a recommended installation route.",
+        "Configure supported model credentials and the search/fetch tools you intend to use."
+      ],
+      "limitations": [
+        "Version 2 is a ground-up rewrite, so version-1 instructions are not interchangeable.",
+        "The README requires network isolation for self-hosted fetch backends; do not casually expose private networks."
+      ],
+      "cost_notes": [
+        "Multiple subagents, model calls, and search tools can compound usage costs.",
+        "Review sandbox storage, provider routing, and outbound-network isolation before using internal documents."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "979115477",
+      "slug": "deerflow-979115477",
+      "full_name": "bytedance/deer-flow",
+      "github_url": "https://github.com/bytedance/deer-flow",
+      "stars": 84761,
+      "stars_added_period": 2321,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/bytedance/deer-flow/blob/main/README.md",
+        "https://github.com/bytedance/deer-flow/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "983515771",
+      "slug": "trpc-agent-go-983515771",
+      "full_name": "trpc-group/trpc-agent-go",
+      "github_url": "https://github.com/trpc-group/trpc-agent-go",
+      "name": "tRPC Agent Go",
+      "category_id": "frameworks",
+      "kind": "framework",
+      "stars": 1888,
+      "stars_added_period": 82,
+      "metrics_as_of": "2026-10-31T14:03:58.829037Z",
+      "profile_kind": "brief",
+      "intro": "A Go framework for building tool-using agents and multi-agent workflows. It provides a Go-native alternative to the Python-oriented frameworks in the featured list.",
+      "utilities": [],
+      "audience": [],
+      "example": "",
+      "requirements": [],
+      "limitations": [],
+      "cost_notes": [],
+      "license": "",
+      "source_urls": [
+        "https://github.com/trpc-group/trpc-agent-go/blob/main/README.md"
+      ],
+      "reviewed_at": "2026-10-31T14:07:48.119191Z"
+    },
+    {
+      "id": "1023243010",
+      "slug": "aegra-1023243010",
+      "full_name": "aegra/aegra",
+      "github_url": "https://github.com/aegra/aegra",
+      "name": "Aegra",
+      "category_id": "agent-operations",
+      "kind": "infrastructure",
+      "stars": 1293,
+      "stars_added_period": 73,
+      "metrics_as_of": "2026-10-31T14:03:58.829037Z",
+      "profile_kind": "brief",
+      "intro": "Self-hostable infrastructure for serving LangGraph agents through compatible deployment APIs with PostgreSQL persistence. It is a deployment-focused alternative rather than a general agent-management workspace.",
+      "utilities": [],
+      "audience": [],
+      "example": "",
+      "requirements": [],
+      "limitations": [],
+      "cost_notes": [],
+      "license": "",
+      "source_urls": [
+        "https://github.com/aegra/aegra/blob/main/README.md"
+      ],
+      "reviewed_at": "2026-10-31T14:07:48.119191Z"
+    },
+    {
+      "name": "Hermes Agent",
+      "category_id": "personal-workspaces",
+      "kind": "agent",
+      "intro": "A persistent personal agent with terminal, desktop, messaging, and scheduled-work interfaces. It can create reusable skills and search past sessions, with configurable model providers.",
+      "utilities": [
+        "Continue tasks across sessions using inspectable memory and skills.",
+        "Run scheduled workflows or interact through supported messaging channels."
+      ],
+      "audience": [
+        "Technical users who want an ongoing assistant they can host and configure."
+      ],
+      "example": "Illustrative, not tested: schedule a read-only public-news digest and review both its sources and retained memory.",
+      "requirements": [
+        "Install the supported package/application and select a model provider.",
+        "Configure only the required gateway channels and execution backend."
+      ],
+      "limitations": [
+        "Self-modifying skills and persistent memory require periodic inspection.",
+        "Unattended tasks and remote execution can act with broad access unless constrained."
+      ],
+      "cost_notes": [
+        "Model subscriptions/API usage, server hosting, and optional cloud tools can incur charges.",
+        "Session history, imported credentials, memory, and messaging integrations need clear retention and access boundaries."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "1024554267",
+      "slug": "hermes-agent-1024554267",
+      "full_name": "NousResearch/hermes-agent",
+      "github_url": "https://github.com/NousResearch/hermes-agent",
+      "stars": 259055,
+      "stars_added_period": 11952,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/NousResearch/hermes-agent/blob/main/README.md",
+        "https://github.com/NousResearch/hermes-agent/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Claude-Mem",
+      "category_id": "agent-operations",
+      "kind": "infrastructure",
+      "intro": "Persistent context infrastructure that captures agent activity and makes summaries available in later sessions. It includes adapters for multiple agent hosts, with local and hosted memory paths.",
+      "utilities": [
+        "Retain compressed observations across coding-agent sessions.",
+        "Retrieve earlier context when resuming work on a project."
+      ],
+      "audience": [
+        "Agent users and developers who need inspectable cross-session memory."
+      ],
+      "example": "Illustrative, not tested: retain a non-sensitive bug-fix observation and verify what a later session retrieves.",
+      "requirements": [
+        "The README lists Node.js 20+, Bun, uv, and SQLite for the relevant local setup.",
+        "Install the adapter for the selected host and inspect its memory-provider configuration."
+      ],
+      "limitations": [
+        "Compressed observations can omit details or preserve incorrect conclusions.",
+        "Provider defaults vary by adapter; the reviewed Grok Bot setup defaults to hosted CMEM Pro, not local storage."
+      ],
+      "cost_notes": [
+        "Hosted memory, summarization models, and local infrastructure can have different costs.",
+        "Captured tool observations may include secrets or personal data; review exclusions, storage, retention, and provider defaults."
+      ],
+      "license": "Apache-2.0 for the documented public core and adapters; hosted/cloud, team, and enterprise areas are outside that grant.",
+      "id": "1048065319",
+      "slug": "claude-mem-1048065319",
+      "full_name": "thedotmack/claude-mem",
+      "github_url": "https://github.com/thedotmack/claude-mem",
+      "stars": 107142,
+      "stars_added_period": 2616,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/thedotmack/claude-mem/blob/main/README.md",
+        "https://github.com/thedotmack/claude-mem/blob/main/LICENSE",
+        "https://github.com/thedotmack/claude-mem/blob/main/docs/license.md",
+        "https://github.com/thedotmack/claude-mem/blob/main/docs/ip-boundary.md"
+      ]
+    },
+    {
+      "name": "Anthropic Skills",
+      "category_id": "skills",
+      "kind": "skill",
+      "intro": "A set of reusable task instructions, scripts, and resources for Claude's skills system. These packages extend an existing agent; they are not standalone autonomous agents.",
+      "utilities": [
+        "Study task-specific SKILL.md patterns and supporting resources.",
+        "Add compatible document, creative, or technical workflows to an agent."
+      ],
+      "audience": [
+        "Agent users and developers designing reusable task instructions."
+      ],
+      "example": "Illustrative, not tested: install a compatible skill and ask it to inspect a demonstration document, then review the result.",
+      "requirements": [
+        "Use a compatible skills-enabled agent and install the desired skill package.",
+        "Check each skill's dependencies and license before executing bundled scripts."
+      ],
+      "limitations": [
+        "The README describes these as demonstration/educational implementations whose behavior may differ from Claude's product.",
+        "Document skills are source-available, not uniformly open source."
+      ],
+      "cost_notes": [
+        "Agent access and models can cost money separately from the skill files.",
+        "Scripts may process documents locally or call external tools; review the individual skill before sharing sensitive inputs."
+      ],
+      "license": "Mixed per-skill licensing: many examples use Apache-2.0; docx, pdf, pptx, and xlsx are source-available under their own licenses. No blanket repository license applies.",
+      "id": "1061953414",
+      "slug": "anthropic-skills-1061953414",
+      "full_name": "anthropics/skills",
+      "github_url": "https://github.com/anthropics/skills",
+      "stars": 185724,
+      "stars_added_period": 6578,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/anthropics/skills/blob/main/README.md",
+        "https://github.com/anthropics/skills/tree/main/skills"
+      ]
+    },
+    {
+      "name": "Page Agent",
+      "category_id": "browser-automation",
+      "kind": "framework",
+      "intro": "A JavaScript agent that operates inside a web page using text-based DOM interaction. Its base integration does not require a headless browser or screenshots.",
+      "utilities": [
+        "Embed natural-language control in an existing web application.",
+        "Assist with in-page navigation or form-filling tasks."
+      ],
+      "audience": [
+        "Web developers prototyping an in-product agent interface."
+      ],
+      "example": "Illustrative, not tested: add an agent to a test form and ask it to fill non-sensitive demonstration fields.",
+      "requirements": [
+        "Integrate the JavaScript package with a page you control.",
+        "Configure a supported model endpoint; multi-page features use additional integrations."
+      ],
+      "limitations": [
+        "DOM interaction does not guarantee compatibility with every custom widget.",
+        "The public demo endpoint is for technical evaluation and has separate terms."
+      ],
+      "cost_notes": [
+        "Production model usage depends on the chosen endpoint; do not treat a testing API as a production entitlement.",
+        "DOM content can include customer or account data; keep secrets out of agent context."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "1062458369",
+      "slug": "page-agent-1062458369",
+      "full_name": "alibaba/page-agent",
+      "github_url": "https://github.com/alibaba/page-agent",
+      "stars": 29611,
+      "stars_added_period": 437,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/alibaba/page-agent/blob/main/README.md",
+        "https://github.com/alibaba/page-agent/blob/main/LICENSE",
+        "https://github.com/alibaba/page-agent/blob/main/docs/terms-and-privacy.md"
+      ]
+    },
+    {
+      "name": "Superpowers",
+      "category_id": "skills",
+      "kind": "skill",
+      "intro": "A composable skills framework for coding agents centered on clarification, design, planning, testing, and review. It changes an existing agent's workflow rather than supplying a new model.",
+      "utilities": [
+        "Guide a coding agent through design and implementation planning.",
+        "Apply test-driven and review-oriented development procedures."
+      ],
+      "audience": [
+        "Developers who want explicit process around an existing coding agent."
+      ],
+      "example": "Illustrative, not tested: use the design workflow for a small feature and review its test plan before implementation.",
+      "requirements": [
+        "Install the integration documented for your coding agent.",
+        "Provide a working model-backed agent and project test environment."
+      ],
+      "limitations": [
+        "Process instructions cannot guarantee test quality or correct implementation.",
+        "Subagent-driven work may expand execution scope; review permissions and budgets."
+      ],
+      "cost_notes": [
+        "The skills are MIT; the host agent and model usage are separate costs.",
+        "The optional visual companion loads a remote logo for version telemetry; review its setting if network disclosure matters."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "1073224795",
+      "slug": "superpowers-1073224795",
+      "full_name": "obra/superpowers",
+      "github_url": "https://github.com/obra/superpowers",
+      "stars": 309775,
+      "stars_added_period": 14271,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/obra/superpowers/blob/main/README.md",
+        "https://github.com/obra/superpowers/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Agency Agents",
+      "category_id": "skills",
+      "kind": "skill",
+      "intro": "A collection of specialized agent personas and workflow instructions. It installs into compatible coding agents and provides role-oriented guidance, not verified professional expertise.",
+      "utilities": [
+        "Reuse role-specific instructions for development and other workflows.",
+        "Compare and customize persona definitions for a bounded task."
+      ],
+      "audience": [
+        "Agent users who want starting points for specialized instructions."
+      ],
+      "example": "Illustrative, not tested: select a frontend-oriented persona for a demonstration review and independently check its suggestions.",
+      "requirements": [
+        "Use a compatible agent or the separately documented installer application.",
+        "Review selected persona files and adapt them to the task and permissions."
+      ],
+      "limitations": [
+        "A specialist title does not establish credentials, accuracy, or tested deliverables.",
+        "Marketing claims in upstream documentation are not ratings or outcomes measured by this directory."
+      ],
+      "cost_notes": [
+        "The MIT instruction collection does not include an agent runtime or model budget.",
+        "Inputs go through the host agent's tools and providers; specialist prompts are not a privacy boundary."
+      ],
+      "license": "MIT for this repository; separately distributed applications need their own scope review.",
+      "id": "1075372545",
+      "slug": "agency-agents-1075372545",
+      "full_name": "msitarzewski/agency-agents",
+      "github_url": "https://github.com/msitarzewski/agency-agents",
+      "stars": 165611,
+      "stars_added_period": 6422,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/msitarzewski/agency-agents/blob/main/README.md",
+        "https://github.com/msitarzewski/agency-agents/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Scientific Agent Skills",
+      "category_id": "domain-specific",
+      "kind": "skill",
+      "intro": "A library of scientific workflows for agents supporting the Agent Skills standard. It covers analysis and database tasks but does not establish that an agent is a qualified scientist.",
+      "utilities": [
+        "Reuse documented scientific-analysis workflows and database guidance.",
+        "Configure task-specific dependencies rather than installing every scientific package."
+      ],
+      "audience": [
+        "Researchers who can validate methods, sources, and outputs in their domain."
+      ],
+      "example": "Illustrative, not tested: use a database-lookup workflow to find public protein records and independently verify identifiers and provenance.",
+      "requirements": [
+        "Use a compatible skills-enabled agent.",
+        "Install only the dependencies needed by the selected skill and arrange any database credentials."
+      ],
+      "limitations": [
+        "Each skill specifies its own compatibility and validation scope.",
+        "Generated scientific or medical content needs expert review and is not clinical advice."
+      ],
+      "cost_notes": [
+        "Agent models, licensed databases, and optional cloud compute may incur charges.",
+        "Do not send patient or unpublished research data to external services without an approved policy."
+      ],
+      "license": "Repository MIT, with individual SKILL.md license metadata potentially adding different terms; review each selected skill. Anthropic document skills are no longer bundled.",
+      "id": "1079456184",
+      "slug": "scientific-agent-skills-1079456184",
+      "full_name": "K-Dense-AI/scientific-agent-skills",
+      "github_url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "stars": 55494,
+      "stars_added_period": 6365,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/README.md",
+        "https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/LICENSE.md"
+      ]
+    },
+    {
+      "name": "Letta Code",
+      "category_id": "knowledge-memory",
+      "kind": "agent",
+      "intro": "A stateful agent harness whose context, memory, and skills can evolve across sessions. It supports local CLI interaction and optional remote or messaging access.",
+      "utilities": [
+        "Maintain an agent's working memory across longer-running interactions.",
+        "Inspect and revise learned context or skills through the documented interface."
+      ],
+      "audience": [
+        "Technical users experimenting with persistent rather than disposable agent sessions."
+      ],
+      "example": "Illustrative, not tested: ask an agent to retain an approved project convention, then inspect its memory before the next session.",
+      "requirements": [
+        "Install the npm package or supported Python wrapper and configure a model.",
+        "Remote-computer and secrets features require the documented Letta sign-in."
+      ],
+      "limitations": [
+        "Automatically rewritten memory or skills can drift and need inspection.",
+        "Platform support differs by installation route; check the current wheel and operating-system requirements."
+      ],
+      "cost_notes": [
+        "Model-provider usage and hosted services may have separate costs.",
+        "Persistent identity and remote-computer access increase the need to review stored context and permissions."
+      ],
+      "license": "Apache-2.0; reviewed the current letta-code repository LICENSE.",
+      "id": "1082960574",
+      "slug": "letta-code-1082960574",
+      "full_name": "letta-ai/letta-code",
+      "github_url": "https://github.com/letta-ai/letta-code",
+      "stars": 3746,
+      "stars_added_period": 319,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/letta-ai/letta-code/blob/main/README.md",
+        "https://github.com/letta-ai/letta-code/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Hindsight",
+      "category_id": "knowledge-memory",
+      "kind": "infrastructure",
+      "intro": "A memory system exposing retain, recall, and reflect operations for agents. It organizes memory into banks and supports self-hosted, embedded, and cloud deployment options.",
+      "utilities": [
+        "Retain interaction-derived information in separate memory banks.",
+        "Recall and reflect over stored context from an application or MCP integration."
+      ],
+      "audience": [
+        "Developers evaluating memory infrastructure for long-running agents."
+      ],
+      "example": "Illustrative, not tested: retain a dated project decision and check whether a later recall returns the right version.",
+      "requirements": [
+        "Deploy the documented server or embedded package and connect a client.",
+        "Configure a supported model provider and persistent storage."
+      ],
+      "limitations": [
+        "A generated reflection is not a verified fact or reliable learning outcome.",
+        "Memory-bank boundaries need deliberate application-level access design."
+      ],
+      "cost_notes": [
+        "Model calls, storage, and optional cloud usage contribute independently to cost.",
+        "Stored memory can include personal or proprietary data; define deletion and provider-routing policies."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "1086419061",
+      "slug": "hindsight-1086419061",
+      "full_name": "vectorize-io/hindsight",
+      "github_url": "https://github.com/vectorize-io/hindsight",
+      "stars": 56828,
+      "stars_added_period": 21733,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/vectorize-io/hindsight/blob/main/README.md",
+        "https://github.com/vectorize-io/hindsight/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "DeepTutor",
+      "category_id": "domain-specific",
+      "kind": "platform",
+      "intro": "A learning workspace connecting tutoring, problem solving, quizzes, research, and reading. Its agents can reuse approved learning context across multiple modes.",
+      "utilities": [
+        "Generate explanations and practice material around a knowledge base.",
+        "Organize study context through notebooks, memory, and learning workflows."
+      ],
+      "audience": [
+        "Learners and educators who can review generated teaching material."
+      ],
+      "example": "Illustrative, not tested: upload an approved lesson and ask for practice questions, then check their answers against the lesson.",
+      "requirements": [
+        "Follow the current Python 3.11+ installation and select required feature modules.",
+        "Configure model, embedding, parsing, and optional frontend services for the chosen deployment."
+      ],
+      "limitations": [
+        "Generated explanations and assessment material can contain errors.",
+        "Feature modules and connected learning sources have separate compatibility and access requirements."
+      ],
+      "cost_notes": [
+        "Models, embeddings, document parsing, media generation, and hosting may be billed separately.",
+        "Student records and learning histories can be sensitive; review account grants, retention, and external-provider use."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "1124219907",
+      "slug": "deeptutor-1124219907",
+      "full_name": "HKUDS/DeepTutor",
+      "github_url": "https://github.com/HKUDS/DeepTutor",
+      "stars": 52375,
+      "stars_added_period": 2535,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/HKUDS/DeepTutor/blob/main/README.md",
+        "https://github.com/HKUDS/DeepTutor/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "agent-browser",
+      "category_id": "browser-automation",
+      "kind": "infrastructure",
+      "intro": "A native browser-automation CLI designed to be called by AI agents. It supplies browser commands and snapshots rather than a complete autonomous agent on its own.",
+      "utilities": [
+        "Give a coding agent command-line access to browser navigation and inspection.",
+        "Run repeatable browser steps from scripts or agent tools."
+      ],
+      "audience": [
+        "Developers integrating browser tools into an existing agent."
+      ],
+      "example": "Illustrative, not tested: inspect a local preview's accessible elements and ask an agent to explain a navigation issue.",
+      "requirements": [
+        "Install the native CLI and Chrome; Linux may need additional browser libraries.",
+        "Source builds require Node.js 24+, pnpm 11+, and Rust."
+      ],
+      "limitations": [
+        "An external agent must decide what commands to run.",
+        "Session profiles and browser control can expose authenticated data; restrict domains and actions."
+      ],
+      "cost_notes": [
+        "The CLI's Apache-2.0 code is separate from any model or gateway billing.",
+        "Browser state and screenshots can contain sensitive information; avoid sharing authenticated captures unnecessarily."
+      ],
+      "license": "Apache-2.0; reviewed the repository LICENSE.",
+      "id": "1132001614",
+      "slug": "agent-browser-1132001614",
+      "full_name": "vercel-labs/agent-browser",
+      "github_url": "https://github.com/vercel-labs/agent-browser",
+      "stars": 44986,
+      "stars_added_period": 1848,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/vercel-labs/agent-browser/blob/main/README.md",
+        "https://github.com/vercel-labs/agent-browser/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "Marketing Skills",
+      "category_id": "skills",
+      "kind": "skill",
+      "intro": "Reusable skills for conversion work, copywriting, SEO, analytics, and growth engineering. They target compatible agents and include optional guided connections to marketing tools.",
+      "utilities": [
+        "Structure an agent's marketing-analysis or copy-drafting task.",
+        "Use skill-specific workflows for SEO or analytics investigations."
+      ],
+      "audience": [
+        "Technical marketers and founders who already use a compatible agent."
+      ],
+      "example": "Illustrative, not tested: ask a skill to critique a demonstration landing page and verify its factual claims before publishing.",
+      "requirements": [
+        "Install skills in an Agent Skills-compatible host.",
+        "Use scoped credentials only when a workflow needs access to marketing accounts."
+      ],
+      "limitations": [
+        "A suggested experiment is not evidence of conversion improvement.",
+        "Tool integrations and partner disclosures deserve separate review."
+      ],
+      "cost_notes": [
+        "Skills are MIT; model usage and connected marketing services may incur charges.",
+        "Use read-only scopes first and avoid exposing customer records or secrets unnecessarily."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "1135212071",
+      "slug": "marketing-skills-1135212071",
+      "full_name": "coreyhaines31/marketingskills",
+      "github_url": "https://github.com/coreyhaines31/marketingskills",
+      "stars": 57621,
+      "stars_added_period": 5783,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/coreyhaines31/marketingskills/blob/main/README.md",
+        "https://github.com/coreyhaines31/marketingskills/blob/main/LICENSE"
+      ]
+    },
+    {
+      "name": "nanobot",
+      "category_id": "personal-workspaces",
+      "kind": "agent",
+      "intro": "A self-hosted personal agent with browser, terminal, and messaging interfaces. It supports file work, remembered preferences, and scheduled tasks around a configured model.",
+      "utilities": [
+        "Use a personal agent through a WebUI, terminal, or chat channel.",
+        "Connect file tools, memory, and scheduled tasks in a smaller deployment."
+      ],
+      "audience": [
+        "Technical users who want an inspectable personal-agent stack."
+      ],
+      "example": "Illustrative, not tested: ask nanobot to summarize a local non-sensitive note and confirm what it stores in memory.",
+      "requirements": [
+        "Python 3.11+ and a supported model provider or local model server.",
+        "Configure the selected channel and deployment; source installs also require Git and Bun."
+      ],
+      "limitations": [
+        "Platform wheels and source builds have different runtime requirements.",
+        "A lightweight framework still needs careful tool, channel, and file-access configuration."
+      ],
+      "cost_notes": [
+        "The project supplies no model account; provider usage or local hardware is your responsibility.",
+        "Memory, channel messages, and file contents may reach the configured model endpoint."
+      ],
+      "license": "MIT for repository code; bundled runtime components have their own notices.",
+      "id": "1147094660",
+      "slug": "nanobot-1147094660",
+      "full_name": "HKUDS/nanobot",
+      "github_url": "https://github.com/HKUDS/nanobot",
+      "stars": 49697,
+      "stars_added_period": 1247,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/HKUDS/nanobot/blob/main/README.md",
+        "https://github.com/HKUDS/nanobot/blob/main/LICENSE"
+      ]
+    },
+    {
+      "id": "1162230313",
+      "slug": "mnemon-1162230313",
+      "full_name": "mnemon-dev/mnemon",
+      "github_url": "https://github.com/mnemon-dev/mnemon",
+      "name": "Mnemon",
+      "category_id": "knowledge-memory",
+      "kind": "infrastructure",
+      "stars": 676,
+      "stars_added_period": 67,
+      "metrics_as_of": "2026-10-31T14:03:58.829037Z",
+      "profile_kind": "brief",
+      "intro": "A standalone persistent-memory binary with graph storage and recall tools. It lets the host agent's model supervise memory decisions instead of embedding a separate model in the memory pipeline.",
+      "utilities": [],
+      "audience": [],
+      "example": "",
+      "requirements": [],
+      "limitations": [],
+      "cost_notes": [],
+      "license": "",
+      "source_urls": [
+        "https://github.com/mnemon-dev/mnemon/blob/master/README.md"
+      ],
+      "reviewed_at": "2026-10-31T14:07:48.119191Z"
+    },
+    {
+      "name": "Paperclip",
+      "category_id": "agent-operations",
+      "kind": "platform",
+      "intro": "An orchestration application for teams of agents, with tasks, goals, budgets, permissions, and history. It manages existing agents rather than replacing their runtimes.",
+      "utilities": [
+        "Assign and track work across heterogeneous agent adapters.",
+        "Review agent costs, permissions, and task history from a dashboard."
+      ],
+      "audience": [
+        "Technical teams coordinating multiple agents with operational ownership."
+      ],
+      "example": "Illustrative, not tested: connect one test agent, set a bounded task budget, and review its activity before expanding access.",
+      "requirements": [
+        "The README requires Node.js 24.11+ and pnpm 9.15+ for the source setup.",
+        "Configure supported agents, persistent storage, and authenticated production access."
+      ],
+      "limitations": [
+        "Adapters have different capabilities and dependencies.",
+        "Budget/governance controls do not guarantee task success or prevent every tool side effect."
+      ],
+      "cost_notes": [
+        "Agent subscriptions/models and deployment resources remain separate expenses.",
+        "Task history, agent credentials, and connected systems need isolation and retention controls."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "1170821064",
+      "slug": "paperclip-1170821064",
+      "full_name": "paperclipai/paperclip",
+      "github_url": "https://github.com/paperclipai/paperclip",
+      "stars": 109200,
+      "stars_added_period": 15826,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/paperclipai/paperclip/blob/master/README.md",
+        "https://github.com/paperclipai/paperclip/blob/master/LICENSE"
+      ]
+    },
+    {
+      "name": "autoresearch",
+      "category_id": "research",
+      "kind": "agent",
+      "intro": "A small setup for agents to iterate on single-GPU language-model training experiments. It is a specialized research loop, not a general web-research assistant.",
+      "utilities": [
+        "Have a coding agent modify training code and record experimental results.",
+        "Control an experiment loop through the repository's program instructions."
+      ],
+      "audience": [
+        "ML researchers comfortable with training code and GPU experiments."
+      ],
+      "example": "Illustrative, not tested: constrain an agent to one training-code change at a time and inspect its experiment log before retaining changes.",
+      "requirements": [
+        "A single NVIDIA GPU, Python 3.10+, and uv are documented requirements.",
+        "Provide a compatible coding agent and prepare the documented training data."
+      ],
+      "limitations": [
+        "The current setup does not target CPU or Apple MPS execution.",
+        "A short-run training metric is not evidence of general model improvement; inspect experiment validity."
+      ],
+      "cost_notes": [
+        "GPU runtime and coding-agent model usage can incur ongoing costs, especially unattended.",
+        "Training data and logs need their own handling policy; the coding agent's provider may receive code and results."
+      ],
+      "license": "README declares MIT, but no standalone root license file was returned during review; verify the applicable grant before redistribution.",
+      "id": "1174820787",
+      "slug": "autoresearch-1174820787",
+      "full_name": "karpathy/autoresearch",
+      "github_url": "https://github.com/karpathy/autoresearch",
+      "stars": 98931,
+      "stars_added_period": 2240,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/karpathy/autoresearch/blob/master/README.md"
+      ]
+    },
+    {
+      "name": "Orca",
+      "category_id": "agent-operations",
+      "kind": "platform",
+      "intro": "A workspace for running coding agents side by side in isolated Git worktrees. It combines agent sessions, terminals, review tools, and optional remote/mobile control.",
+      "utilities": [
+        "Compare multiple agent implementations without sharing one working tree.",
+        "Inspect changes and steer sessions from a unified interface."
+      ],
+      "audience": [
+        "Developers coordinating coding agents across local or remote repositories."
+      ],
+      "example": "Illustrative, not tested: give two agents the same small task in separate worktrees and manually review both diffs.",
+      "requirements": [
+        "Install the supported application and configure the coding agents you want to run.",
+        "Set up SSH or mobile integrations only if required."
+      ],
+      "limitations": [
+        "Worktree isolation does not isolate all credentials, network access, or external side effects.",
+        "Parallel sessions can multiply model usage and require careful merge review."
+      ],
+      "cost_notes": [
+        "The MIT application is separate from agent subscriptions and remote-compute costs.",
+        "The README documents anonymous usage telemetry and opt-out guidance; review remote access and session-data handling."
+      ],
+      "license": "MIT; reviewed the repository LICENSE.",
+      "id": "1183888342",
+      "slug": "orca-1183888342",
+      "full_name": "stablyai/orca",
+      "github_url": "https://github.com/stablyai/orca",
+      "stars": 111481,
+      "stars_added_period": 24210,
+      "metrics_as_of": "2026-10-31T14:03:15.188847Z",
+      "profile_kind": "full",
+      "reviewed_at": "2026-10-31T14:07:48.119191Z",
+      "source_urls": [
+        "https://github.com/stablyai/orca/blob/main/README.md",
+        "https://github.com/stablyai/orca/blob/main/LICENSE",
+        "https://www.onorca.dev/docs/telemetry"
+      ]
+    },
+    {
+      "id": "1192646696",
+      "slug": "magic-context-1192646696",
+      "full_name": "cortexkit/magic-context",
+      "github_url": "https://github.com/cortexkit/magic-context",
+      "name": "Magic Context",
+      "category_id": "knowledge-memory",
+      "kind": "infrastructure",
+      "stars": 2437,
+      "stars_added_period": 287,
+      "metrics_as_of": "2026-10-31T14:03:58.829037Z",
+      "profile_kind": "brief",
+      "intro": "Memory infrastructure for coding agents that captures project knowledge, consolidates it, and recalls it across sessions. It focuses on background context management around an existing coding agent rather than a separate chat workspace.",
+      "utilities": [],
+      "audience": [],
+      "example": "",
+      "requirements": [],
+      "limitations": [],
+      "cost_notes": [],
+      "license": "",
+      "source_urls": [
+        "https://github.com/cortexkit/magic-context/blob/master/README.md"
+      ],
+      "reviewed_at": "2026-10-31T14:07:48.119191Z"
+    },
+    {
+      "id": "1225834084",
+      "slug": "openmonoagent-1225834084",
+      "full_name": "StartupHakk/OpenMonoAgent.ai",
+      "github_url": "https://github.com/StartupHakk/OpenMonoAgent.ai",
+      "name": "OpenMonoAgent",
+      "category_id": "coding",
+      "kind": "agent",
+      "stars": 1904,
+      "stars_added_period": 67,
+      "metrics_as_of": "2026-10-31T14:03:58.829037Z",
+      "profile_kind": "brief",
+      "intro": "A .NET coding agent with bundled llama.cpp inference and local execution options. It is an alternative for developers who want to run the model on their own hardware rather than defaulting to a cloud coding service.",
+      "utilities": [],
+      "audience": [],
+      "example": "",
+      "requirements": [],
+      "limitations": [],
+      "cost_notes": [],
+      "license": "",
+      "source_urls": [
+        "https://github.com/StartupHakk/OpenMonoAgent.ai/blob/main/README.md"
+      ],
+      "reviewed_at": "2026-10-31T14:07:48.119191Z"
+    }
+  ],
+  "top50": [
+    "1073224795",
+    "1024554267",
+    "975734319",
+    "193215554",
+    "787076358",
+    "1061953414",
+    "1075372545",
+    "626805178",
+    "599320067",
+    "937253475",
+    "552661142",
+    "965415649",
+    "881458615",
+    "909213664",
+    "1183888342",
+    "1170821064",
+    "968197216",
+    "1048065319",
+    "1174820787",
+    "730534580",
+    "798201435",
+    "979115477",
+    "643445235",
+    "660551251",
+    "824874689",
+    "666299222",
+    "656099147",
+    "649170660",
+    "680120071",
+    "710601088",
+    "1135212071",
+    "1086419061",
+    "846698999",
+    "1079456184",
+    "1124219907",
+    "1147094660",
+    "522158088",
+    "600596928",
+    "1132001614",
+    "676672661",
+    "488641606",
+    "822604462",
+    "784181462",
+    "762304524",
+    "1062458369",
+    "776908852",
+    "573661753",
+    "958830659",
+    "488804911",
+    "1082960574"
+  ],
+  "rising": {
+    "coding": [
+      "1225834084"
+    ],
+    "research": [],
+    "browser-automation": [],
+    "knowledge-memory": [
+      "1192646696",
+      "1162230313"
+    ],
+    "workflow-business": [],
+    "frameworks": [
+      "983515771"
+    ],
+    "personal-workspaces": [],
+    "skills": [],
+    "domain-specific": [],
+    "agent-operations": [
+      "1023243010",
+      "636553615"
+    ]
+  }
+}
