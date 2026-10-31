@@ -46,6 +46,10 @@ Outputs are `index.html`, `categories/{id}/index.html`,
 public JSON. Presentation lives in `assets/site.css` and `assets/directory.js`.
 The minimal workflow deploys only allowlisted public outputs through GitHub Pages.
 
+Generated HTML uses content-versioned CSS and JavaScript URLs so returning
+browsers receive updated presentation and behavior. These asset versions do not
+change permanent profile URLs or the published directory data.
+
 Tables and project content are rendered into HTML. Search, utility/kind filtering,
 and sorting progressively enhance those tables; JavaScript is not required to
 discover or read entries. Unknown values sort last. Edition-specific scope and
