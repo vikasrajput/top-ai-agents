@@ -4,10 +4,12 @@ Find AI agents, frameworks, skills and tools for coding, research and automation
 
 [![Open the website](assets/open-website.svg)](https://vikasrajput.github.io/top-ai-agents/) [![Star on GitHub](assets/star-github.svg)](https://github.com/vikasrajput/top-ai-agents)
 
+- **[Top 50](#top-50-by-github-stars):** Popular indexed projects, ordered by total GitHub stars.
+- **[Rising alternatives](#rising-alternatives):** Projects outside the Top 50 selected by new stars in the measured period.
+
 **Updated 31 Oct 2026** | Star activity: September 2026.
 
-<details>
-<summary><strong>Explore by use case</strong></summary>
+## Explore by use case
 
 | Category | What you will find |
 |---|---|
@@ -21,8 +23,6 @@ Find AI agents, frameworks, skills and tools for coding, research and automation
 | [Skills](https://vikasrajput.github.io/top-ai-agents/categories/skills/) | Reusable instructions and skill packages. |
 | [Domain-specific](https://vikasrajput.github.io/top-ai-agents/categories/domain-specific/) | Specialized research, education and industry agents. |
 | [Agent operations](https://vikasrajput.github.io/top-ai-agents/categories/agent-operations/) | Operate, connect and manage agents. |
-
-</details>
 
 ## Top 50 by GitHub stars
 
