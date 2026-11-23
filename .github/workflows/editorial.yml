@@ -1,0 +1,47 @@
+name: Review editorial proposals
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, labeled, ready_for_review]
+    branches: [main]
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "Editorial PR number (leave empty to check all open proposals)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: editorial-proposal-gate
+  cancel-in-progress: false
+
+jobs:
+  validate-and-merge:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      checks: write
+      statuses: read
+    steps:
+      - name: Check out trusted default-branch policy only
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test trusted editorial policy
+        run: python -B -m unittest discover -s .github/tests -p "test_*.py"
+      - name: Validate proposal and merge only after the owner's approval
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EDITORIAL_BOT_LOGIN: ${{ vars.EDITORIAL_BOT_LOGIN }}
+          EDITORIAL_BOT_ID: ${{ vars.EDITORIAL_BOT_ID }}
+        run: python -B .github/scripts/editorial_gate.py
